@@ -12,8 +12,8 @@ background-color:#F8F8F8;
 
 header{
 display:block;
-margin-left:auto;
-margin-right:auto;
+margin:14px auto;
+line-height:50px;
 }
 
 #logo{
@@ -21,7 +21,21 @@ display:inline-block;
 width:51px;
 height:48px;
 background-image:url(img/hhLogo.png);
-
+vertical-align:middle;
 }
 
-.
+#ua{
+display:inline-block;
+margin-left:5px;
+vertical-align:middle;
+width:33px;
+height:33px;
+background-color:red;
+color:white;
+border-radius:50px;
+}
+
+.search-form{
+display:inline-block;
+vertical-align:middle;
+}
