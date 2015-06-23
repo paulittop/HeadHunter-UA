@@ -8,10 +8,11 @@
 </head>
 <body>
 <header>
+    <div id="header">
     <div id="logo"></div>
-        <div id="ua">ua</div>
+        <span id="ua">ua</span>
     <form action="select.js" method="post" class="search-form">
-        <input type="text" name="search-phrase" placeholder="Я ищу" id="input-field">
+        <input type="text" name="search-phrase" placeholder="Я ищу..." id="input-field">
         <select name="search-filter" size=1 id="search-filter">
             <option>Вакансии</option>
             <option>Резюме</option>
@@ -22,7 +23,13 @@
     </form>
     <a href="/html/country.html" id="country">Работа в Украине</a>
     <span id="language">RU</span>
+    </div>
 </header>
+<div id="main-menu">
+    <ul>
+        <li>Ищу работу</li>
+    </ul>
+</div>
 </body>
 
 </html>

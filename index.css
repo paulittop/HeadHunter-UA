@@ -1,41 +1,68 @@
-html,body{
-margin:0px;
-padding:0px;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-font-size:12px;
-font-family:"Verdana", sans-serif;
-color:black;
-background-color:#F8F8F8;
+body {
+    font-size: 12px;
+    font-family: "Verdana", sans-serif;
+    color: black;
+    background-color: #F8F8F8;
+    width: auto;
+    border: solid 2px GREEN;
 }
 
-header{
-display:block;
-margin:14px auto;
-line-height:50px;
+#header {
+
+    height: 50px;
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 50px;
+    text-align: center;
+    border: solid 2px black;
 }
 
-#logo{
-display:inline-block;
-width:51px;
-height:48px;
-background-image:url(img/hhLogo.png);
-vertical-align:middle;
+#logo {
+    display: inline-block;
+    width: 51px;
+    height: 47px;
+    background-image: url(img/hhLogo.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-top: 3px;
 }
 
-#ua{
-display:inline-block;
-margin-left:5px;
-vertical-align:middle;
-width:33px;
-height:33px;
-background-color:red;
-color:white;
-border-radius:50px;
+#ua {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 60px;
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    vertical-align: middle;
 }
 
-.search-form{
-display:inline-block;
-vertical-align:middle;
+.search-form {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+
+#input-field{
+    width: 167px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+#main-menu{
+    width: 100%;
+    line-height:40px;
+    background-color: black;
+    color: white;
+
+
 }
