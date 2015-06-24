@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <title>
-    headhunter
+    Работа в Киеве и Украине на HeadHunter. Поиск работы: вакансии и резюме, подбор персонала, ищу работу, поиск
+    сотрудников.
 </title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="index.css">
@@ -9,27 +10,60 @@
 <body>
 <header>
     <div id="header">
-    <div id="logo"></div>
+        <div id="logo"></div>
         <span id="ua">ua</span>
-    <form action="select.js" method="post" class="search-form">
-        <input type="text" name="search-phrase" placeholder="Я ищу..." id="input-field">
-        <select name="search-filter" size=1 id="search-filter">
-            <option>Вакансии</option>
-            <option>Резюме</option>
-            <option>Компании</option>
-        </select>
+
+        <form action="select.js" method="post" class="search-form">
+            <input type="text" name="search-phrase" placeholder="Я ищу..." id="input-field">
+
+
+            <select name="search-filter" size=1 id="search-filter">
+                <option>Вакансии</option>
+                <option>Резюме</option>
+                <option>Компании</option>
+            </select>
+
+        </form>
+        </form>
         <a href="/html/search.html" id="search-button">Найти</a>
         <a href="/html/wide-search.html" id="wide-search-button">Расширенный<br>поиск</a>
-    </form>
-    <a href="/html/country.html" id="country">Работа в Украине</a>
-    <span id="language">RU</span>
+        </form>
+        <a href="/html/country.html" id="country">Работа в Украине</a>
+        <span id="language">RU</span>
+    </div>
+    <div id="main-menu">
+        <ul>
+            <li>Ищу работу
+                <ul>
+                    <li>Создать резюме</li>
+                    <li>Как улучшить резюме</li>
+                </ul>
+            </li>
+            <li>Ищу сотрудников
+                <ul>
+                    <li>Разместить вакансию</li>
+                    <li>Прайс-лист</li>
+                    <li>Описание услуг</li>
+                </ul>
+            </li>
+            <li>Помощь</li>
+            <li>Компании
+                <ul>
+                    <li>Каталог компаний</li>
+                    <li>Работа по профессиям</li>
+                </ul>
+            </li>
+            <li>Проекты
+                <ul>
+                    <li>Премия HR-бренд</li>
+                    <li>Полезная информация</li>
+                    <li>Обучающие вебинары</li>
+                </ul>
+            </li>
+<li>Войти</li>
+        </ul>
     </div>
 </header>
-<div id="main-menu">
-    <ul>
-        <li>Ищу работу</li>
-    </ul>
-</div>
 </body>
 
 </html>

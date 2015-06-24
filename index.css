@@ -36,33 +36,112 @@ body {
 #ua {
     display: inline-block;
     margin-left: 5px;
-    margin-bottom: 60px;
+    margin-bottom: 5px;
     width: 32px;
     height: 32px;
     background-color: red;
     color: white;
     border-radius: 50px;
     font-size: 18px;
+    line-height: 32px;
     vertical-align: middle;
 }
 
 .search-form {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     margin-left: 40px;
 }
 
-#input-field{
+input[type=text] {
     width: 167px;
     height: 35px;
     vertical-align: middle;
+    border: solid 1px #cccccc;
+    margin-right: 0;
+    padding-left: 10px;
 }
 
-#main-menu{
+input[type=text], select:focus {
+    outline: 0;
+}
+
+select {
+    height: 39px;
+    width: 105px;
+    -webkit-appearance: none;
+    border: solid 1px #cccccc;
+    border-left-style: none;
+    border-radius: 0;
+    margin-left: -5px;
+    padding-left: 15px;
+    text-align: center;
+    background: url("img/arrow_down.png") no-repeat 90% 50%;
+    appearance: none;
+    overflow: hidden;
+}
+
+option {
+    display: block;
+    height: 39px;
+    width: 105px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#search-button {
+    display: inline-block;
+    color: white;
+    background-color: #0099ff;
+    height: 39px;
+    width: 100px;
+    border-radius: 5%;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-bottom: 1px;
+    text-decoration: none;
+}
+
+#wide-search-button {
+    display: inline-block;
+    line-height: 12px;
+    font-size: 11px;
+    text-align: left;
+    vertical-align: middle;
+    color: #0099FF;
+    text-decoration: none;
+}
+
+#country, #language {
+    display: inline-block;
+    text-align: right;
+    color: #989898;
+}
+
+#country {
+    text-decoration: none;
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+#main-menu {
     width: 100%;
-    line-height:40px;
+    line-height: 40px;
     background-color: black;
     color: white;
+}
 
+#main-menu li {
+    display: inline;
+    margin-right: 30px;
+}
+
+#main-menu>ul :last-child{
+    margin-left:150px;
+}
+
+#main-menu li > ul {
+    display: none;
 
 }
