@@ -6,6 +6,7 @@
 </title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -60,22 +61,67 @@
                     <li>Обучающие вебинары</li>
                 </ul>
             </li>
-<li>Войти</li>
+            <li>Войти</li>
         </ul>
     </div>
 </header>
 <main>
     <div id="wide-image">
-    <div id="dream-work">
-        Найдите работу <br>мечты
-        <div id="resume-vacancy-buttons">
-            <a href="html/resume.html" id="resume">Разместить резюме</a>
-            <a href="html/vacancy.html"id="vacancy">Опубликовать вакансию</a>
+        <div id="columns-wrapper">
+            <div id="first-column">
+                <div id="dream-work">
+                    Найдите работу <br>мечты
+                    <div id="resume-vacancy-buttons">
+                        <a href="html/resume.html" id="resume">Разместить резюме</a>
+                        <a href="html/vacancy.html" id="vacancy">Опубликовать вакансию</a>
+                    </div>
+                </div>
+            </div>
+            <div id="second-column">
+                <div id="login-menu">
+                    <div id="login-menu-wrapping">
+                        <div id="variants-of-entrance">
+                            <span id="enter-with">Войти с помощью</span>
+                            <a href="html/registration.html" id="registration">Регистрация</a>
+                        </div>
+                        <div id="social-networks">
+                           <a href="html/mail-ru-login.html" id="mail-ru"><span></span></a>
+                           <a href="html/odnokl-login.html" id="odnokl"></a>
+                           <a href="html/fb-login.html" class="fa fa-facebook-official"></a>
+                           <a href="html/vk-login.html" id="vk"></a>
+                           <a href="html/google-login.html" class="fa fa-google-plus-square"></a>
+
+                          <!--      <li ><span class="fa fa-facebook-official"> </span> </li>
+                                <li id="vk"><i ></i></li>
+                                <li><i class="fa fa-google-plus-square"></i></li>
+
+-->
+                        </div>
+                        <span id="or-email">или электронной почты</span>
+
+                        <div id="login-fields">
+                            <form action="login.js" method="post" class="login-form">
+                                <input type="text" name="e-mail" placeholder="E-mail" id="e-mail">
+                                <input type="password" name="pwd" placeholder="Пароль" id="pwd">
+                                <input type="checkbox" name="remember-me" id="remember-me">
+                                <input type="button" name="enter" value="Войти" id="enter-button">
+                                <a href="html/remember-the-password" id="pwd-remember">Напомнить пароль</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <div id="statistic">
+        <span class="numbers">801 169</span><br>
+        <span class="letters">резюме</span><br>
+        <span class="numbers">17 152</span><br>
+        <span class="letters">вакансии</span><br>
+        <span class="numbers">33 526</span><br>
+        <span class="letters">компаний</span><br>
     </div>
-
 </main>
 </body>
 

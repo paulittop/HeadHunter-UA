@@ -146,36 +146,132 @@ option {
     display: none;
 }
 
-#wide-image{
+#columns-wrapper {
+    padding: 0;
+    margin: 0;
 
+}
+
+#wide-image {
     padding: 0;
     width: 1405px;
     height: 440px;
-    background: url("img/SSV_-_416_-Jupiter-_Moma_class_intelligence_collection_ship.jpg")no-repeat;
+    background: url("img/anonymous-background.jpg") no-repeat;
     color: white;
 }
-#dream-work{
-    margin:0 700px 55px 70px;
-    padding-top:50px;
-    font-size:5.5em;
-    text-indent:0;
+
+#first-column {
+    display: inline-block;
+    width: 600px;
 }
-#resume-vacancy-buttons{
-    margin:150px 0px 0px 0px;
-    font-size:13pt;
+
+#dream-work {
+    display: inline-block;
+    margin: 0 0 0px 70px;
+    padding-top: 30px;
+    font-size: 5em;
+    text-indent: 0;
+}
+
+#resume-vacancy-buttons {
+    margin: 100px 0px 0px 0px;
+    font-size: 13pt;
 
 }
 
-#resume-vacancy-buttons a{
-    padding: 15px 25px ;
+#resume-vacancy-buttons a {
+    padding: 15px 25px;
     margin-right: 15px;
-    color:white;
+    color: white;
     text-decoration: none;
-    border:solid 1px white;
+    border: solid 1px white;
 }
 
-#resume-vacancy-buttons a:hover
-{
+#resume-vacancy-buttons a:hover {
     background-color: white;
     color: black;
 }
+
+#statistic {
+    margin-top: 20px;
+    padding-left: 30px;
+    border-left: 1px solid white;
+}
+
+.numbers {
+    font-size: 33px;
+    padding-top: 15px;
+}
+
+.letters {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+#second-column {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+#login-menu {
+    width: 310px;
+    display: block;
+    height: 336px;
+    background-color: rgba(55, 55, 55, 0.5);
+
+}
+
+#login-menu-wrapping {
+    padding: 30px 20px;
+}
+
+#registration {
+    padding-left: 30px;
+    text-decoration: none;
+    color: #989898;
+}
+
+#social-networks a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+#mail-ru {
+    background: url("font-awesome/mail-ru.png") no-repeat;
+}
+
+#odnokl {
+    background: url("font-awesome/Odno.png") no-repeat;
+}
+.fa{
+    display: inline;
+    margin:0 ;
+    padding: 0;
+    background-color: white;
+    vertical-align:bottom;
+    line-height: 36px;
+    font-size: 36px !important;
+}
+
+
+.fa-facebook-official {
+    color: #5A645C;
+}
+
+.fa-google-plus-square{
+color:red;
+}
+
+
+#vk {
+    background: url("font-awesome/VK.png") no-repeat;
+}
+
+/*
+body{
+    border: solid 3px green;
+}*/
