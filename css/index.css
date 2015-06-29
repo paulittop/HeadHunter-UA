@@ -9,7 +9,6 @@ body {
     color: black;
     background-color: #F8F8F8;
     width: auto;
-    border: solid 2px GREEN;
 }
 
 #header {
@@ -27,7 +26,7 @@ body {
     display: inline-block;
     width: 51px;
     height: 47px;
-    background-image: url(img/hhLogo.png);
+    background-image: url(../img/hhLogo.png);
     background-repeat: no-repeat;
     vertical-align: top;
     margin-top: 3px;
@@ -76,7 +75,7 @@ select {
     margin-left: -5px;
     padding-left: 15px;
     text-align: center;
-    background: url("img/arrow_down.png") no-repeat 90% 50%;
+    background: url("../img/arrow_down.png") no-repeat 90% 50%;
     appearance: none;
     overflow: hidden;
 }
@@ -156,7 +155,7 @@ option {
     padding: 0;
     width: 1405px;
     height: 440px;
-    background: url("img/anonymous-background.jpg") no-repeat;
+    background: url("../img/anonymous-background.jpg") no-repeat;
     color: white;
 }
 
@@ -237,38 +236,78 @@ option {
     display: inline-block;
     width: 36px;
     height: 36px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
-#mail-ru {
-    background: url("font-awesome/mail-ru.png") no-repeat;
-}
-
-#odnokl {
-    background: url("font-awesome/Odno.png") no-repeat;
-}
 .fa{
-    display: inline;
-    margin:0 ;
-    padding: 0;
-    background-color: white;
-    vertical-align:bottom;
-    line-height: 36px;
-    font-size: 36px !important;
-}
 
+
+}
+.fa:before,span.icon-google-plus:before{
+    font-size: 42px;
+}
 
 .fa-facebook-official {
-    color: #5A645C;
 }
 
 .fa-google-plus-square{
-color:red;
+    color: red;
+}
+
+#social-networks span{
+    display: inline-block;
+  /*  border:1px solid #FF0000;*/
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    width: 36px;
+    border-radius: 2px;
+}
+
+#social-networks i{
+    border: 1px solid rgba(55, 55, 55, 0.5);
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-color: white;
+}
+
+i.fa-facebook-official{
+    color: #3B5998;
+    background-color:#FF0000;
+    position: absolute;
+    top:-4px;
+    left:0px;
+    height: 41px;
+    width:36px;
+}
+
+i.fa-facebook-official:before{
+    background-color:#FFFFFF;
+    position: absolute;
+    top:0px;
+    left:-1px;
+    height: 41px;
+    width:36px;
 }
 
 
 #vk {
-    background: url("font-awesome/VK.png") no-repeat;
+    background: url("../img/VK.png") no-repeat;
+}
+
+
+
+#mail-ru {
+    background: url("../img/mail-ru.png") no-repeat;
+}
+
+#odnokl {
+    background: url("../img/Odno.png") no-repeat;
 }
 
 /*
