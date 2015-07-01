@@ -52,7 +52,7 @@ body {
     margin-left: 40px;
 }
 
-input[type=text] {
+header.input[type=text] {
     width: 167px;
     height: 35px;
     vertical-align: middle;
@@ -126,19 +126,28 @@ option {
 
 #main-menu {
     width: 100%;
-    line-height: 40px;
     background-color: black;
     color: white;
     border-bottom: 1px solid #FFFFFF;
+
+}
+
+#main-menu ul {
+    line-height: 30px;
+    vertical-align: bottom;
 }
 
 #main-menu li {
     display: inline;
     margin-right: 30px;
+
 }
 
 #main-menu > ul :last-child {
-    margin-left: 150px;
+}
+
+#menu-input-field {
+    border-radius: 5px;
 }
 
 #main-menu li > ul {
@@ -148,14 +157,15 @@ option {
 #columns-wrapper {
     padding: 0;
     margin: 0;
+    height: 415px;
+    border-bottom: solid 20px lightgrey;
 
 }
 
 #wide-image {
     padding: 0;
-    width: 1405px;
-    height: 440px;
     background: url("../img/anonymous-background.jpg") no-repeat;
+    background-size: cover;
     color: white;
 }
 
@@ -173,7 +183,7 @@ option {
 }
 
 #resume-vacancy-buttons {
-    margin: 100px 0px 0px 0px;
+    margin: 140px 0px 0px 0px;
     font-size: 13pt;
 
 }
@@ -192,7 +202,7 @@ option {
 }
 
 #statistic {
-    margin-top: 20px;
+
     padding-left: 30px;
     border-left: 1px solid white;
 }
@@ -203,27 +213,34 @@ option {
 }
 
 .letters {
+    display: block;
     font-size: 16px;
-    padding-top: 5px;
+    margin-bottom: 10px;
 }
 
 #second-column {
     display: inline-block;
     vertical-align: top;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 50px;
 }
 
-#login-menu {
+#third-column {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 170px;
+    margin-top: 30px;
     width: 310px;
+}
+
+#login-menu {
     display: block;
     height: 336px;
     background-color: rgba(55, 55, 55, 0.5);
-
 }
 
 #login-menu-wrapping {
-    padding: 30px 20px;
+    padding: 25px 20px;
 }
 
 #registration {
@@ -232,39 +249,41 @@ option {
     color: #989898;
 }
 
+#social-networks {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 #social-networks a {
     display: inline-block;
     width: 36px;
     height: 36px;
-    border-radius: 2px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
-.fa{
-
-
-}
-.fa:before,span.icon-google-plus:before{
-    font-size: 42px;
+.fa:before {
+    font-size: 44px;
 }
 
 .fa-facebook-official {
 }
 
-.fa-google-plus-square{
+.fa-google-plus-square {
     color: red;
 }
 
-#social-networks span{
+#social-networks span {
     display: inline-block;
-  /*  border:1px solid #FF0000;*/
+    /*  border:1px solid #FF0000;*/
     height: 35px;
     overflow: hidden;
     position: relative;
     width: 36px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
-#social-networks i{
+#social-networks i {
     border: 1px solid rgba(55, 55, 55, 0.5);
     padding: 0;
     margin: 0;
@@ -276,31 +295,46 @@ option {
     background-color: white;
 }
 
-i.fa-facebook-official{
+i.fa-facebook-official {
     color: #3B5998;
-    background-color:#FF0000;
+    background-color: #FF0000;
     position: absolute;
-    top:-4px;
-    left:0px;
+    top: -4px;
+    left: 0px;
     height: 41px;
-    width:36px;
+    width: 36px;
 }
 
-i.fa-facebook-official:before{
-    background-color:#FFFFFF;
+i.fa-facebook-official:before {
+    background-color: #FFFFFF;
     position: absolute;
-    top:0px;
-    left:-1px;
+    top: -2px;
+    left: -1px;
     height: 41px;
-    width:36px;
+    width: 36px;
 }
 
+i.fa-google-plus-square {
+    color: red;
+    background-color: #FF0000;
+    position: absolute;
+    top: -4px;
+    height: 41px;
+    width: 36px;
+}
+
+i.fa-google-plus-square {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -4px;
+    left: -1px;
+    height: 41px;
+    width: 36px;
+}
 
 #vk {
     background: url("../img/VK.png") no-repeat;
 }
-
-
 
 #mail-ru {
     background: url("../img/mail-ru.png") no-repeat;
@@ -310,7 +344,118 @@ i.fa-facebook-official:before{
     background: url("../img/Odno.png") no-repeat;
 }
 
-/*
-body{
-    border: solid 3px green;
-}*/
+#or-email {
+    color: #989898;
+}
+
+#e-mail, #pwd {
+    box-sizing: border-box;
+    width: 270px;
+    height: 35px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#remember-me {
+    margin-top: 10px;
+}
+
+#enter-button {
+    border: 0;
+    margin-top: 15px;
+    width: 70px;
+    height: 34px;
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+}
+
+#pwd-remember {
+    color: dodgerblue;
+    margin-left: 25px;
+}
+
+
+#lower-part{
+
+}
+.vacancies-block {
+    display: block;
+    width: 1280px;
+    height: 645px;
+    margin: 30px auto;
+
+    position: relative;
+    min-width: 1000px;
+    white-space: nowrap;
+}
+
+#vacancies-wrapper{
+    display: inline-block;
+    width:930px;
+    height: 630px;
+}
+
+#vacancies-header{
+    display: block;
+}
+
+#vacancies-wo-header{
+    columns:270px ;
+    -webkit-columns: 270px;
+    -webkit-column-gap: 53px;
+    -moz-column-gap: 53px;
+    column-gap: 53px;
+    overflow: hidden;
+    height:550px;
+}
+
+.vacancy-wrapper{
+    display: block;
+    margin-bottom: 20px;
+    -webkit-column-break-inside: avoid;
+    -webkit-column-break-after: avoid ;
+    white-space: normal;
+}
+
+.vacancy-link{
+    text-decoration: none;
+    color:black;
+}
+
+span.vacancy,span.salary {
+    display: block;
+    font-size:14px;
+    line-height: 20px;
+}
+
+.employer>a{
+    font-size: 11px;
+    color:grey;
+    text-decoration: none;
+}
+
+.vacancies-advertise-wrapper {
+    display: inline-block;
+    width:320px;
+    height:665px;
+    vertical-align: top;
+    margin-left: 35px;;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.advertising-block{
+    border: solid 1px grey;
+    display: block;
+    width: 309px;
+    height: 262px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
