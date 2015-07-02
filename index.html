@@ -13,8 +13,8 @@
 <body>
 <header>
     <div id="header">
-        <div id="logo"></div>
-        <span id="ua">ua</span>
+        <div class="logo"></div>
+        <span class="ua">ua</span>
 
         <form action="select.js" method="post" class="search-form">
             <input type="text" name="search-phrase" placeholder="Я ищу..." id="input-field">
@@ -67,327 +67,461 @@
         </ul>
     </div>
 </header>
-<main>
-    <div id="wide-image">
-        <div id="columns-wrapper">
-            <div id="first-column">
-                <div id="dream-work">
-                    Найдите работу <br>мечты
-                    <div id="resume-vacancy-buttons">
-                        <a href="html/resume.html" id="resume">Разместить резюме</a>
-                        <a href="html/vacancy.html" id="vacancy">Опубликовать вакансию</a>
+
+<div id="wide-image">
+    <div id="wide-image-columns-wrapper">
+        <div id="first-column">
+            <div id="dream-work">
+                Найдите работу <br>мечты
+                <div id="resume-vacancy-buttons">
+                    <a href="html/resume.html" id="resume">Разместить резюме</a>
+                    <a href="html/vacancy.html" id="vacancy">Опубликовать вакансию</a>
+                </div>
+            </div>
+        </div>
+        <div id="second-column">
+            <div id="statistic">
+                <span class="numbers">801 169</span><br>
+                <span class="letters">резюме</span><br>
+                <span class="numbers">17 152</span><br>
+                <span class="letters">вакансии</span><br>
+                <span class="numbers">33 526</span><br>
+                <span class="letters">компаний</span><br>
+            </div>
+        </div>
+        <div id="third-column">
+            <div id="login-menu">
+                <div id="login-menu-wrapping">
+                    <div id="variants-of-entrance">
+                        <span id="enter-with">Войти с помощью</span>
+                        <a href="html/registration.html" id="registration">Регистрация</a>
                     </div>
-                </div>
-            </div>
-            <div id="second-column">
-                <div id="statistic">
-                    <span class="numbers">801 169</span><br>
-                    <span class="letters">резюме</span><br>
-                    <span class="numbers">17 152</span><br>
-                    <span class="letters">вакансии</span><br>
-                    <span class="numbers">33 526</span><br>
-                    <span class="letters">компаний</span><br>
-                </div>
-            </div>
-            <div id="third-column">
-                <div id="login-menu">
-                    <div id="login-menu-wrapping">
-                        <div id="variants-of-entrance">
-                            <span id="enter-with">Войти с помощью</span>
-                            <a href="html/registration.html" id="registration">Регистрация</a>
-                        </div>
-                        <div id="social-networks">
-                            <a href="html/mail-ru-login.html" id="mail-ru"><span></span></a>
-                            <a href="html/odnokl-login.html" id="odnokl"></a>
-                            <a href="html/fb-login.html"><span><i class="fa fa-facebook-official"></i></span></a>
-                            <a href="html/vk-login.html" id="vk"></a>
-                            <a href="html/google-login.html"><span><i class="fa fa-google-plus-square"></i></span></a>
-                        </div>
-                        <span id="or-email">или электронной почты</span>
+                    <div id="social-networks">
+                        <a href="html/mail-ru-login.html" id="mail-ru"><span></span></a>
+                        <a href="html/odnokl-login.html" id="odnokl"></a>
+                        <a href="html/fb-login.html"><span><i class="fa fa-facebook-official"></i></span></a>
+                        <a href="html/vk-login.html" id="vk"></a>
+                        <a href="html/google-login.html"><span><i class="fa fa-google-plus-square"></i></span></a>
+                    </div>
+                    <span id="or-email">или электронной почты</span>
 
-                        <div id="login-fields">
-                            <form action="login.js" method="post" class="login-form">
-                                <input type="text" name="e-mail" placeholder="E-mail" id="e-mail">
-                                <input type="password" name="pwd" placeholder="Пароль" id="pwd">
+                    <div id="login-fields">
+                        <form action="login.js" method="post" class="login-form">
+                            <input type="text" name="e-mail" placeholder="E-mail" id="e-mail">
+                            <input type="password" name="pwd" placeholder="Пароль" id="pwd">
 
-                                <label><input type="checkbox" name="remember-me" id="remember-me">Запомнить меня</label><br>
-                                <input type="button" name="enter" value="Войти" id="enter-button">
-                                <a href="html/remember-the-password" id="pwd-remember">Напомнить пароль</a>
-                            </form>
-                        </div>
+                            <label><input type="checkbox" name="remember-me" id="remember-me">Запомнить меня</label><br>
+                            <input type="button" name="enter" value="Войти" id="enter-button">
+                            <a href="html/remember-the-password" id="pwd-remember">Напомнить пароль</a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="lower-part">
-        <div class="vacancies-block">
-            <div id="vacancies-wrapper">
-                <span id="vacancies-header"><h2>Вакансии дня в Украине</h2></span>
+</div>
 
-                <div id="vacancies-wo-header">
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Менеджер по продаже и аренде недвижимости / Риелтор ( м. Крещатик / Борщаговка / Левобережная)</span>
-                            <span class="salary">от 3 500 до 30 000 грн.</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">АЛЬФАБРОК, Киев</a></span>
-                    </div>
+<div class="column-wrapper">
+    <div id="vacancies-wrapper">
+        <span class="header"><h2>Вакансии дня в Украине</h2></span>
 
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Java Developer (Financial Solutions)</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Credit Suisse, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Менеджер по продажам инвестиционных услуг</span>
-                            <span class="salary">от 7 000 до 12 000 грн.</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Консалтинг Лейн, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Координатор проектов</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">4Service, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Mенеджер по работе с основными клиентами (Украина)</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Cargill Ukraine, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Front-end developer</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Kyivstar, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Reward Specialist</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                    <span class="employer"><a href="html/employer.html">British American Tobacco Ukraine,
-                        Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Аналітик Відділу аналізу та моделювання роздрібних ризиків</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Райффайзен Банк Аваль, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">C# Team Leaderз/п не указана</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Ciklum, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Brand Manager</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">DANONE, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">SAP FI Specialist</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Monsanto, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Директор практики</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Terrasoft, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Java Developer</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Epam Systems Ukraine, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Junior .Net Developer</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">KPMG Ukraine</a></span>
-                    </div>
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Менеджер по продаже и аренде недвижимости / Риелтор ( м. Крещатик / Борщаговка / Левобережная)</span>
-                            <span class="salary">от 3 500 до 30 000 грн.</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">АЛЬФАБРОК, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Java Developer (Financial Solutions)</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Credit Suisse, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Менеджер по продажам инвестиционных услуг</span>
-                            <span class="salary">от 7 000 до 12 000 грн.</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Консалтинг Лейн, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Координатор проектов</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">4Service, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Mенеджер по работе с основными клиентами (Украина)</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Cargill Ukraine, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Front-end developer</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Kyivstar, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Reward Specialist</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                    <span class="employer"><a href="html/employer.html">British American Tobacco Ukraine,
-                        Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Аналітик Відділу аналізу та моделювання роздрібних ризиків</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Райффайзен Банк Аваль, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">C# Team Leaderз/п не указана</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Ciklum, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Brand Manager</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">DANONE, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">SAP FI Specialist</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Monsanto, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Директор практики</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Terrasoft, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Java Developer</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">Epam Systems Ukraine, Киев</a></span>
-                    </div>
-
-
-                    <div class="vacancy-wrapper">
-                        <a class="vacancy-link" href="html/vacancy-link.html">
-                            <span class="vacancy">Junior .Net Developer</span>
-                            <span class="salary">з/п не указана</span>
-                        </a>
-                        <span class="employer"><a href="html/employer.html">KPMG Ukraine</a></span>
-                    </div>
-                </div>
-
+        <div id="vacancies-wo-header">
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Менеджер по продаже и аренде недвижимости / Риелтор ( м. Крещатик / Борщаговка / Левобережная)</span>
+                    <span class="salary">от 3 500 до 30 000 грн.</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">АЛЬФАБРОК, Киев</a></span>
             </div>
-            <div class="vacancies-advertise-wrapper">
-                <div class="advertising-block">
-                </div>
-                <div class="advertising-block">
-                </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Java Developer (Financial Solutions)</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Credit Suisse, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Менеджер по продажам инвестиционных услуг</span>
+                    <span class="salary">от 7 000 до 12 000 грн.</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Консалтинг Лейн, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Координатор проектов</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">4Service, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Mенеджер по работе с основными клиентами (Украина)</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Cargill Ukraine, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Front-end developer</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Kyivstar, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Reward Specialist</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                    <span class="employer"><a href="html/employer.html">British American Tobacco Ukraine,
+                        Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Аналітик Відділу аналізу та моделювання роздрібних ризиків</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Райффайзен Банк Аваль, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">C# Team Leaderз/п не указана</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Ciklum, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Brand Manager</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">DANONE, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">SAP FI Specialist</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Monsanto, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Директор практики</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Terrasoft, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Java Developer</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Epam Systems Ukraine, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Junior .Net Developer</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">KPMG Ukraine</a></span>
+            </div>
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Менеджер по продаже и аренде недвижимости / Риелтор ( м. Крещатик / Борщаговка / Левобережная)</span>
+                    <span class="salary">от 3 500 до 30 000 грн.</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">АЛЬФАБРОК, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Java Developer (Financial Solutions)</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Credit Suisse, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Менеджер по продажам инвестиционных услуг</span>
+                    <span class="salary">от 7 000 до 12 000 грн.</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Консалтинг Лейн, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Координатор проектов</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">4Service, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Mенеджер по работе с основными клиентами (Украина)</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Cargill Ukraine, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Front-end developer</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Kyivstar, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Reward Specialist</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                    <span class="employer"><a href="html/employer.html">British American Tobacco Ukraine,
+                        Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Аналітик Відділу аналізу та моделювання роздрібних ризиків</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Райффайзен Банк Аваль, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">C# Team Leaderз/п не указана</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Ciklum, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Brand Manager</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">DANONE, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">SAP FI Specialist</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Monsanto, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Директор практики</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Terrasoft, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Java Developer</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">Epam Systems Ukraine, Киев</a></span>
+            </div>
+
+
+            <div class="vacancy-wrapper">
+                <a class="vacancy-link" href="html/vacancy-link.html">
+                    <span class="vacancy">Junior .Net Developer</span>
+                    <span class="salary">з/п не указана</span>
+                </a>
+                <span class="employer"><a href="html/employer.html">KPMG Ukraine</a></span>
             </div>
         </div>
     </div>
+    <div class="vacancies-advertise-wrapper">
+        <div class="advertising-block">
+        </div>
+        <div class="advertising-block">
+        </div>
+    </div>
+</div>
+
+<div class="column-wrapper">
+    <div id="top-wrapper">
+        <div id="top-left-wrapper">
+            <div id="job-in-companies">
+                <div id="header2">
+                    <span class="header"><h2>Работа в компаниях Украины</h2></span>
+                </div>
+                <div id="logo-wrapper">
+                    <img src="img/good-logo.jpg" width="250px" height="160px">
+                </div>
+                <div id="job-in-companies-columns">
+                    <ul id="job-in-companies-list">
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">МЕТИНВЕСТ</a>
+                                </span>
+                            <span class="vacancies-quantity">22</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">JT International Company Ukraine (JTI)</a>
+                                </span>
+                            <span class="vacancies-quantity">2</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">1+1 медиа</a>
+                                </span>
+                            <span class="vacancies-quantity">30</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">COMFY</a>
+                                </span>
+                            <span class="vacancies-quantity">19</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">ROSHEN, Кондитерская корпорация</a>
+                                </span>
+                            <span class="vacancies-quantity">6</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">Kyivstar</a>
+                                </span>
+                            <span class="vacancies-quantity">37</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">INTRO PRO</a>
+                                </span>
+                            <span class="vacancies-quantity">9</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">SimCorp</a>
+                                </span>
+                            <span class="vacancies-quantity">0</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">Медиа Группа Украина</a>
+                                </span>
+                            <span class="vacancies-quantity">6</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">Harveast Holding</a>
+                                </span>
+                            <span class="vacancies-quantity">1</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">Ciclum</a>
+                                </span>
+                            <span class="vacancies-quantity">154</span>
+                        </li>
+
+                        <li>
+                                <span class="company-name">
+                                    <a href="html/company.html">ProCredit Bank</a>
+                                </span>
+                            <span class="vacancies-quantity">5</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="banners-wrapper">
+
+            </div>
+            <div id="banners">
+                <div class="mini-banner">
+                    <img src="img/banner-refresh-resume.jpg">
+                </div>
+
+                <div class="mini-banner">
+                    <img src="img/banner-mini-hr-brand.jpg" class="mini-image">
+                        <span class="banner-text"><a href="html/"> Золотой стандарт качества работы с репутацией
+                            компании как работодателя</a></span>
+                </div>
+                <div class="mini-banner">
+                    <img src="img/banner-mini-colour%20resume.jpg">
+                     <span class="banner-text"><a href="html/colour-resume.html">Выделите резюме цветом на 2 недели
+                     </a></span>
+                </div>
+            </div>
+            <div id="job-by-professions"></div>
+        </div>
+        <div id="top-right-wrapper">
+            <div id="news"></div>
+            <div id="articles"></div>
+        </div>
+    </div>
+    <div id="bottom-main-wrapper">
+        <div id="bottom-left-wrapper">
+            <div id="job-in-ukraine"></div>
+            <div id="other-cities"></div>
+            <div id="useful"></div>
+        </div>
+        <div id="bottom-right-wrapper">
+            <div id="get-in-touch"></div>
+        </div>
+    </div>
+</div>
 
 </main>
 </body>

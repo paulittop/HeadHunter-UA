@@ -22,7 +22,7 @@ body {
 
 }
 
-#logo {
+.logo {
     display: inline-block;
     width: 51px;
     height: 47px;
@@ -32,7 +32,7 @@ body {
     margin-top: 3px;
 }
 
-#ua {
+.ua {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 5px;
@@ -154,7 +154,7 @@ option {
     display: none;
 }
 
-#columns-wrapper {
+#wide-image-columns-wrapper {
     padding: 0;
     margin: 0;
     height: 415px;
@@ -377,77 +377,73 @@ i.fa-google-plus-square {
     margin-left: 25px;
 }
 
-
-#lower-part{
-
-}
-.vacancies-block {
+.column-wrapper {
     display: block;
-    width: 1280px;
-    height: 645px;
+    width: 1320px;
     margin: 30px auto;
-
+    padding: 0;
     position: relative;
     min-width: 1000px;
     white-space: nowrap;
 }
 
-#vacancies-wrapper{
+#vacancies-wrapper {
     display: inline-block;
-    width:930px;
-    height: 630px;
+    width: 960px;
 }
 
-#vacancies-header{
+.header {
     display: block;
+
 }
 
-#vacancies-wo-header{
-    columns:270px ;
+#vacancies-wo-header {
+    columns: 270px;
     -webkit-columns: 270px;
     -webkit-column-gap: 53px;
     -moz-column-gap: 53px;
     column-gap: 53px;
     overflow: hidden;
-    height:550px;
+    height: 550px;
 }
 
-.vacancy-wrapper{
+.vacancy-wrapper {
     display: block;
     margin-bottom: 20px;
     -webkit-column-break-inside: avoid;
-    -webkit-column-break-after: avoid ;
+    -webkit-column-break-after: avoid;
     white-space: normal;
 }
 
-.vacancy-link{
+.vacancy-link {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-span.vacancy,span.salary {
+span.vacancy, span.salary {
     display: block;
-    font-size:14px;
+    font-size: 14px;
     line-height: 20px;
 }
 
-.employer>a{
+.employer > a {
     font-size: 11px;
-    color:grey;
+    color: grey;
     text-decoration: none;
 }
 
 .vacancies-advertise-wrapper {
     display: inline-block;
-    width:320px;
-    height:665px;
+    width: 320px;
+    height: 665px;
     vertical-align: top;
     margin-left: 35px;;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.advertising-block{
+
+.advertising-block {
     border: solid 1px grey;
     display: block;
     width: 309px;
@@ -458,4 +454,85 @@ span.vacancy,span.salary {
     margin-bottom: 20px;
 }
 
+#top-wrapper {
+    display: block;
+    width: 1320px;
+    border-top: 1px solid darkgrey;
+}
 
+#top-left-wrapper {
+    display: inline-block;
+    width: 960px;
+}
+
+#logo-wrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#job-in-companies-columns {
+    display: inline-block;
+    margin-left: 70px;
+    columns: 250px;
+    -webkit-columns: 250px 2;
+    -webkit-column-gap: 70px;
+    -webkit-column-fill: auto;
+}
+
+#job-in-companies-list {
+    list-style: none;
+    margin: 0;
+}
+
+#job-in-companies-list li {
+    margin-bottom: 8px;
+    display: list-item;
+    -webkit-column-break-inside: avoid;
+
+}
+
+.company-name > a {
+    text-decoration: none;
+    color: black;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.vacancies-quantity {
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+}
+
+#banners {
+    margin: 0;
+    padding: 0;
+    display: block;
+    white-space: nowrap;
+}
+
+.mini-banner {
+    display: inline-block;
+    width: 310px;
+    height: 142px;
+    display: inline-block;
+}
+
+.banner-text > a {
+    display: inline-block;
+    width:120px;
+    text-decoration: none;
+    color:black;
+    line-height: 20px;
+}
+
+.mini-image{
+    display: inline-block;
+}
+.banner-text{
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    font-size: 14px;
+    margin: 10px 15px;
+}
