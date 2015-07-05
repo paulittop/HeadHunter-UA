@@ -249,12 +249,12 @@ option {
     color: #989898;
 }
 
-#social-networks {
+.social-networks {
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-#social-networks a {
+.social-networks a {
     display: inline-block;
     width: 36px;
     height: 36px;
@@ -262,7 +262,7 @@ option {
     margin-right: 10px;
 }
 
-.fa:before {
+ .fa:before {
     font-size: 44px;
 }
 
@@ -273,7 +273,7 @@ option {
     color: red;
 }
 
-#social-networks span {
+.social-networks span {
     display: inline-block;
     /*  border:1px solid #FF0000;*/
     height: 35px;
@@ -283,7 +283,7 @@ option {
     border-radius: 5px;
 }
 
-#social-networks i {
+.social-networks i {
     border: 1px solid rgba(55, 55, 55, 0.5);
     padding: 0;
     margin: 0;
@@ -318,7 +318,7 @@ i.fa-google-plus-square {
     color: red;
     background-color: #FF0000;
     position: absolute;
-    top: -4px;
+    top: -7px;
     height: 41px;
     width: 36px;
 }
@@ -394,7 +394,11 @@ i.fa-google-plus-square {
 
 .header {
     display: block;
-
+    font-weight: bold;
+    font-size: 17px;
+    padding: 25px 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    vertical-align: top;
 }
 
 #vacancies-wo-header {
@@ -454,14 +458,15 @@ span.vacancy, span.salary {
     margin-bottom: 20px;
 }
 
-#top-wrapper {
+.top-wrapper {
     display: block;
     width: 1320px;
     border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgrey;
 }
 
-#top-left-wrapper {
-    display: inline-block;
+.left-wrapper {
+    display: block;
     width: 960px;
 }
 
@@ -482,6 +487,7 @@ span.vacancy, span.salary {
 #job-in-companies-list {
     list-style: none;
     margin: 0;
+    /*   display:inline-table;*/
 }
 
 #job-in-companies-list li {
@@ -513,26 +519,172 @@ span.vacancy, span.salary {
 
 .mini-banner {
     display: inline-block;
-    width: 310px;
-    height: 142px;
+    width: 300px;
+    height: 140px;
     display: inline-block;
+    padding: 4px;
+    margin-right: 10px;
+    border: 1px solid #dfe2e5;
+    background-color: white;
+
 }
 
 .banner-text > a {
     display: inline-block;
-    width:120px;
+    width: 120px;
     text-decoration: none;
-    color:black;
+    color: black;
     line-height: 20px;
 }
 
-.mini-image{
+.mini-image {
     display: inline-block;
 }
-.banner-text{
+
+.banner-text {
     display: inline-block;
     vertical-align: top;
     white-space: normal;
     font-size: 14px;
     margin: 10px 15px;
+}
+
+.banners-wrapper {
+    background-color: rgba(200, 200, 200, 0.2);
+    width: 952px;
+    padding: 30px 15px 30px 30px;
+    -webkit-coluns: 280px 3;
+}
+
+.job-by-professions-wrapper {
+    margin-top: 10px;
+}
+
+div.job-by-professions-list {
+    display: block;
+    columns: 270px 3;
+    margin-top: 20px;
+    -webkit-columns: 280px 3;
+    -webkit-column-gap: 45px;
+}
+
+ul.list-of-the-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: normal;
+}
+
+.list-element {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.link-in-list {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    -webkit-column-break-inside: avoid;
+}
+
+.top-right-wrapper {
+    float: right;
+    width: 306px;
+    border-left: 1px solid darkgray;
+    padding-left: 15px;
+}
+
+.news-image {
+    width: 60px;
+    height: 60px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-item {
+    display: block;
+    padding: 20px 0 20px;
+    border-bottom: 1px solid grey;
+}
+
+.news-text {
+    display: inline-block;
+    width: 200px;
+    white-space: normal;
+    vertical-align: top;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom-left-wrapper {
+    border-top: 1px solid grey;
+    margin-right: 30px;
+}
+
+.column {
+    display: inline-block;
+    width: 320px;
+    border-right: 1px solid grey;
+    margin: 10px 20px;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.job-in-ukraine {
+    vertical-align: top;
+}
+
+p.article {
+    white-space: normal;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    padding-right: 60px;
+
+}
+
+.images-wrapper {
+    display: block;
+    padding-left: 140px;
+    width: 120px;
+    height: 120px;
+    background: url("../img/online.png") no-repeat;
+}
+
+.goo-apple {
+    display: block;
+    margin-bottom: 10px;
+    width: 128px;
+    height: 33px;
+    text-decoration: none;
+    background: #c2bfbb url("../img/google-store.svg") no-repeat 13px;
+    background-size: 115px;
+    border-radius: 3px;
+}
+
+.goo-apple:last-child {
+    background-position: 13px 3px;
+}
+
+.footer-social-link>.fa:before{
+    font-size: 24px;
+}
+
+i.fa-facebook{
+    color:#3A5795;
+}
+i.fa-twitter{
+   color:#659FCB;
 }
