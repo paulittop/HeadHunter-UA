@@ -688,3 +688,30 @@ i.fa-facebook{
 i.fa-twitter{
    color:#659FCB;
 }
+
+.footer-social{
+    display: inline-block;
+    text-align: right;
+    padding-left: 1000px;
+}
+
+.footer{
+    border-top:grey 1px solid;
+    padding-top: 20px;
+}
+.footer-black{
+    text-decoration: none;
+    color: black;
+    padding-right:5px;
+    line-height: 21px;
+}
+
+.footer-grey{
+    text-decoration: none;
+    color: grey;
+    border-left:grey solid 1px;
+    padding-left:5px;
+    padding-right:5px;
+}
+.footer-grey:last-child{
+border:none;}
