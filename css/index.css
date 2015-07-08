@@ -4,127 +4,165 @@ html, body {
 }
 
 body {
-    font-size: 12px;
-    font-family: "Tahoma", sans-serif;
+
     color: black;
     background-color: #F8F8F8;
     width: auto;
 }
 
-#header {
+/*.icon-facebook-sign:before{content:"\f082";}
+.icon-facebook:before{content:"\f09a";}*/
 
+.column-wrapper {
+    display: block;
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    min-width: 1000px;
+    white-space: nowrap;
+}
+
+/*.header,.logo,.search-wrapper,.search-buttons,.country-language{ border: 1px solid green}*/
+
+.header {
     height: 50px;
-    margin-top: 14px;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 50px;
-    text-align: center;
+    font-family: ProximaNovaCond,Arial,sans-serif;
+    margin-top: 30px;
+    margin-left: 66px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
 .logo {
     display: inline-block;
-    width: 51px;
-    height: 47px;
-    background-image: url(../img/hhLogo.png);
-    background-repeat: no-repeat;
-    vertical-align: top;
-    margin-top: 3px;
+    width: 88px;
+    height: 51px;
+    background: url(../img/hh.ua.svg) no-repeat;
+    background-size: 88px 51px;
 }
 
-.ua {
+.search-wrapper{
     display: inline-block;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    width: 32px;
-    height: 32px;
-    background-color: red;
-    color: white;
-    border-radius: 50px;
-    font-size: 18px;
-    line-height: 32px;
-    vertical-align: middle;
+    margin-left: 32px;
+    margin-top: 0px;
+    vertical-align: top;
 }
 
 .search-form {
     display: inline-block;
-    vertical-align: top;
-    margin-left: 40px;
 }
 
-header.input[type=text] {
-    width: 167px;
+.input-field {
+    width: 582px;
     height: 35px;
-    vertical-align: middle;
-    border: solid 1px #cccccc;
-    margin-right: 0;
-    padding-left: 10px;
+    border: solid 1px #ddd;
+    border-right-style: none;
+    border-radius: 3px 0px 0px 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 12px;
+    line-height: 14px;
+    font-size: 14px;
 }
 
 input[type=text], select:focus {
     outline: 0;
+    padding-left:11px;
+    padding-top:0px;
 }
 
-select {
-    height: 39px;
-    width: 105px;
+input::-webkit-input-placeholder{
+    word-spacing: normal;
+}
+
+select.search-filter {
+    display: inline-block;
+    height: 35px;
+    width: 106px;
+    line-height: 25px;
+    border: solid 1px #ddd;
+    border-radius: 0px 3px 3px 0px;
+    padding-top: 2px;
+    margin-left: -6px;
+    padding-left: 14px;
+    background:white url("../img/arrow_down.png") no-repeat 92% 49%;
     -webkit-appearance: none;
-    border: solid 1px #cccccc;
-    border-left-style: none;
-    border-radius: 0;
-    margin-left: -5px;
-    padding-left: 15px;
-    text-align: center;
-    background: url("../img/arrow_down.png") no-repeat 90% 50%;
     appearance: none;
-    overflow: hidden;
-}
-
-option {
-    display: block;
-    height: 39px;
-    width: 105px;
-    -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    overflow: hidden;
+    font-family: ProximaNovaCond,Arial,sans-serif;
+    font-size: 12px;
+    text-indent: 0px;
+    letter-spacing: normal;
+}
+option{
+
 }
 
-#search-button {
+.search-buttons{
+    display: inline-block;
+    vertical-align: top;
+    margin-left:1px;
+}
+.search-button {
     display: inline-block;
     color: white;
-    background-color: #0099ff;
-    height: 39px;
+    background-color: #509deb;
+    height: 35px;
     width: 100px;
-    border-radius: 5%;
-    line-height: 40px;
-    vertical-align: middle;
-    margin-bottom: 1px;
+    border-radius: 3px;
+    font-family: ProximaNovaCond,Arial,sans-serif;
+    line-height: 35px;
     text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#wide-search-button {
+.wide-search-button {
     display: inline-block;
-    line-height: 12px;
+    line-height:13px;
     font-size: 11px;
-    text-align: left;
+    font-weight:lighter;
+    padding-left:6px;
     vertical-align: middle;
     color: #0099FF;
     text-decoration: none;
+    transform: translateZ(0);
 }
 
-#country, #language {
+.country-language{
     display: inline-block;
-    text-align: right;
+    margin: -1px 0 0 101px;
+    vertical-align: top;
+
+}
+
+.country, .language {
+    display: inline-block;
     color: #989898;
-}
-
-#country {
+    line-height: 13px;
+    font-size: 11px;
+    font-weight:lighter;
     text-decoration: none;
-    padding-left: 100px;
-    padding-right: 30px;
+
 }
 
-#main-menu {
+.language {
+  margin-left: 24px;
+}
+
+
+.main-menu {
     width: 100%;
     background-color: black;
     color: white;
@@ -132,49 +170,49 @@ option {
 
 }
 
-#main-menu ul {
+.main-menu ul {
     line-height: 30px;
     vertical-align: bottom;
 }
 
-#main-menu li {
+.main-menu li {
     display: inline;
     margin-right: 30px;
 
 }
 
-#main-menu > ul :last-child {
+.main-menu > ul :last-child {
 }
 
-#menu-input-field {
+.menu-input-field {
     border-radius: 5px;
 }
 
-#main-menu li > ul {
+.main-menu li > ul {
     display: none;
 }
 
-#wide-image-columns-wrapper {
-    padding: 0;
-    margin: 0;
-    height: 415px;
-    border-bottom: solid 20px lightgrey;
+.wide-image-columns-wrapper {
+    overflow: hidden;
 
 }
 
-#wide-image {
-    padding: 0;
-    background: url("../img/anonymous-background.jpg") no-repeat;
-    background-size: cover;
+.wide-image {
+    max-width: none;
+    height: 374px;
+    background: url("../img/anonymous-background.jpg") 0 50% no-repeat;
+    background-size: 101%;
     color: white;
+    overflow: hidden;
+
 }
 
-#first-column {
+.first-column {
     display: inline-block;
     width: 600px;
 }
 
-#dream-work {
+.dream-work {
     display: inline-block;
     margin: 0 0 0px 70px;
     padding-top: 30px;
@@ -182,13 +220,12 @@ option {
     text-indent: 0;
 }
 
-#resume-vacancy-buttons {
+.resume-vacancy-buttons {
     margin: 140px 0px 0px 0px;
     font-size: 13pt;
-
 }
 
-#resume-vacancy-buttons a {
+.resume-vacancy-buttons a {
     padding: 15px 25px;
     margin-right: 15px;
     color: white;
@@ -196,12 +233,12 @@ option {
     border: solid 1px white;
 }
 
-#resume-vacancy-buttons a:hover {
+.resume-vacancy-buttons a:hover {
     background-color: white;
     color: black;
 }
 
-#statistic {
+.statistic {
 
     padding-left: 30px;
     border-left: 1px solid white;
@@ -218,32 +255,33 @@ option {
     margin-bottom: 10px;
 }
 
-#second-column {
+.second-column {
     display: inline-block;
     vertical-align: top;
     margin-left: 100px;
     margin-top: 50px;
 }
 
-#third-column {
+.third-column {
     display: inline-block;
     vertical-align: top;
     margin-left: 170px;
     margin-top: 30px;
     width: 310px;
+    overflow: hidden;
 }
 
-#login-menu {
+.login-menu {
     display: block;
     height: 336px;
     background-color: rgba(55, 55, 55, 0.5);
 }
 
-#login-menu-wrapping {
+.login-menu-wrapping {
     padding: 25px 20px;
 }
 
-#registration {
+.registration {
     padding-left: 30px;
     text-decoration: none;
     color: #989898;
@@ -262,7 +300,7 @@ option {
     margin-right: 10px;
 }
 
- .fa:before {
+.fa:before {
     font-size: 44px;
 }
 
@@ -318,7 +356,7 @@ i.fa-google-plus-square {
     color: red;
     background-color: #FF0000;
     position: absolute;
-    top: -7px;
+    left: -10px;
     height: 41px;
     width: 36px;
 }
@@ -332,23 +370,23 @@ i.fa-google-plus-square {
     width: 36px;
 }
 
-#vk {
+.vk {
     background: url("../img/VK.png") no-repeat;
 }
 
-#mail-ru {
+.mail-ru {
     background: url("../img/mail-ru.png") no-repeat;
 }
 
-#odnokl {
+.odnokl {
     background: url("../img/Odno.png") no-repeat;
 }
 
-#or-email {
+.or-email {
     color: #989898;
 }
 
-#e-mail, #pwd {
+.e-mail, .pwd {
     box-sizing: border-box;
     width: 270px;
     height: 35px;
@@ -358,11 +396,11 @@ i.fa-google-plus-square {
     border-radius: 5px;
 }
 
-#remember-me {
+.remember-me {
     margin-top: 10px;
 }
 
-#enter-button {
+.enter-button {
     border: 0;
     margin-top: 15px;
     width: 70px;
@@ -372,40 +410,34 @@ i.fa-google-plus-square {
     color: dodgerblue;
 }
 
-#pwd-remember {
+.pwd-remember {
     color: dodgerblue;
     margin-left: 25px;
 }
 
-.column-wrapper {
-    display: block;
-    width: 1320px;
-    margin: 30px auto;
-    padding: 0;
-    position: relative;
-    min-width: 1000px;
-    white-space: nowrap;
-}
 
-#vacancies-wrapper {
+
+.vacancies-wrapper {
     display: inline-block;
     width: 960px;
 }
 
-.header {
+.h2 {
     display: block;
     font-weight: bold;
     font-size: 17px;
     padding: 25px 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     vertical-align: top;
 }
 
-#vacancies-wo-header {
+.vacancies-wo-header {
     columns: 270px;
-    -webkit-columns: 270px;
-    -webkit-column-gap: 53px;
-    -moz-column-gap: 53px;
+    -webkit-columns: 280px;
+    -webkit-column-gap: 45px;
+    -moz-columns: 280px 3;
+    -moz-column-gap: 45px;
+    -moz-column-fill: auto;
     column-gap: 53px;
     overflow: hidden;
     height: 550px;
@@ -416,6 +448,8 @@ i.fa-google-plus-square {
     margin-bottom: 20px;
     -webkit-column-break-inside: avoid;
     -webkit-column-break-after: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
     white-space: normal;
 }
 
@@ -470,27 +504,30 @@ span.vacancy, span.salary {
     width: 960px;
 }
 
-#logo-wrapper {
+.logo-wrapper {
     display: inline-block;
     vertical-align: top;
 }
 
-#job-in-companies-columns {
+.job-in-companies-columns {
     display: inline-block;
     margin-left: 70px;
-    columns: 250px;
-    -webkit-columns: 250px 2;
-    -webkit-column-gap: 70px;
+    columns: 280px;
+    -webkit-columns: 280px 2;
+    -webkit-column-gap: 45px;
     -webkit-column-fill: auto;
+    -moz-columns: 280px 3;
+    -moz-column-gap: 45px;
+
 }
 
-#job-in-companies-list {
+.job-in-companies-list {
     list-style: none;
     margin: 0;
     /*   display:inline-table;*/
 }
 
-#job-in-companies-list li {
+.job-in-companies-list li {
     margin-bottom: 8px;
     display: list-item;
     -webkit-column-break-inside: avoid;
@@ -510,7 +547,7 @@ span.vacancy, span.salary {
     text-align: right;
 }
 
-#banners {
+.banners {
     margin: 0;
     padding: 0;
     display: block;
@@ -553,7 +590,7 @@ span.vacancy, span.salary {
     background-color: rgba(200, 200, 200, 0.2);
     width: 952px;
     padding: 30px 15px 30px 30px;
-    -webkit-coluns: 280px 3;
+
 }
 
 .job-by-professions-wrapper {
@@ -562,10 +599,12 @@ span.vacancy, span.salary {
 
 div.job-by-professions-list {
     display: block;
-    columns: 270px 3;
+    columns: 280px 3;
     margin-top: 20px;
     -webkit-columns: 280px 3;
     -webkit-column-gap: 45px;
+    -moz-columns: 280px 3;
+    -moz-column-gap: 45px;
 }
 
 ul.list-of-the-links {
@@ -678,40 +717,52 @@ p.article {
     background-position: 13px 3px;
 }
 
-.footer-social-link>.fa:before{
+.footer-social-link > .fa:before {
     font-size: 24px;
 }
 
-i.fa-facebook{
-    color:#3A5795;
-}
-i.fa-twitter{
-   color:#659FCB;
+i.fa-facebook {
+    color: #3A5795;
 }
 
-.footer-social{
+i.fa-twitter {
+    color: #659FCB;
+}
+
+i.icon-Vkontakte {
+    font-size: 24px;
+    color: green;
+    border: none;
+    text-decoration: none
+}
+
+.footer-social {
     display: inline-block;
     text-align: right;
     padding-left: 1000px;
 }
 
-.footer{
-    border-top:grey 1px solid;
+.footer {
+    border-top: grey 1px solid;
     padding-top: 20px;
 }
-.footer-black{
+
+.footer-black {
     text-decoration: none;
     color: black;
-    padding-right:5px;
+    padding-right: 5px;
     line-height: 21px;
 }
 
-.footer-grey{
+.footer-grey {
     text-decoration: none;
     color: grey;
-    border-left:grey solid 1px;
-    padding-left:5px;
-    padding-right:5px;
+    border-left: grey solid 1px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.footer-grey:last-child{
-border:none;}
+
+.footer-grey:last-child {
+    margin-top: 30px;
+    border: none;
+}

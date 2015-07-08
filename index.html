@@ -8,33 +8,40 @@
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/font-awesome-mini.css">
+<link rel="stylesheet" href="css/Grands-icon-font/style.css">
+<!--
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="http://www.upsingh.in/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0">
+
+-->
 
 </head>
 <body>
 <header>
-    <div id="header">
+    <div class="header column-wrapper">
         <div class="logo"></div>
-        <span class="ua">ua</span>
-
-        <form action="select.js" method="post" class="search-form">
-            <input type="text" name="search-phrase" placeholder="Я ищу..." id="input-field">
-
-
-            <select name="search-filter" size=1 id="search-filter">
-                <option>Вакансии</option>
-                <option>Резюме</option>
-                <option>Компании</option>
-            </select>
-
-        </form>
-        </form>
-        <a href="html/search.html" id="search-button">Найти</a>
-        <a href="html/wide-search.html" id="wide-search-button">Расширенный<br>поиск</a>
-        </form>
-        <a href="html/country.htmlπ" id="country">Работа в Украине</a>
-        <span id="language">RU</span>
+        <div class="search-wrapper">
+            <form action="select.js" method="post" class="search-form">
+                <input type="text" name="search-phrase" placeholder="Я ищу..." class="input-field">
+                <select name="search-filter" size=1 class="search-filter">
+                    <option>Вакансии</option>
+                    <option>Резюме</option>
+                    <option>Компании</option>
+                </select>
+            </form>
+        </div>
+        <div class="search-buttons">
+            <a href="html/search.html" class="search-button">Найти</a>
+            <a href="html/wide-search.html" class="wide-search-button">Расширенный поиск</a>
+        </div>
+        <div class="country-language">
+            <a href="html/country.htmlπ" class="country">Работа в Украине</a>
+            <span class="language">RU</span>
+        </div>
     </div>
-    <div id="main-menu">
+    <div class="main-menu">
         <ul>
             <li>Ищу работу
                 <ul>
@@ -63,24 +70,24 @@
                     <li>Обучающие вебинары</li>
                 </ul>
             </li>
-            <li><input type="text" name="search-phrase" placeholder="Я ищу..." id="menu-input-field"></li>
+            <li><input type="text" name="search-phrase" placeholder="Я ищу..." class="menu-input-field"></li>
         </ul>
     </div>
 </header>
 
-<div id="wide-image">
-    <div id="wide-image-columns-wrapper">
-        <div id="first-column">
-            <div id="dream-work">
+<div class="wide-image">
+    <div class="wide-image-columns-wrapper">
+        <div class="first-column">
+            <div class="dream-work">
                 Найдите работу <br>мечты
-                <div id="resume-vacancy-buttons">
-                    <a href="html/resume.html" id="resume">Разместить резюме</a>
-                    <a href="html/vacancy.html" id="vacancy">Опубликовать вакансию</a>
+                <div class="resume-vacancy-buttons">
+                    <a href="html/resume.html" class="resume">Разместить резюме</a>
+                    <a href="html/vacancy.html" class="vacancy">Опубликовать вакансию</a>
                 </div>
             </div>
         </div>
-        <div id="second-column">
-            <div id="statistic">
+        <div class="second-column">
+            <div class="statistic">
                 <span class="numbers">801 169</span><br>
                 <span class="letters">резюме</span><br>
                 <span class="numbers">17 152</span><br>
@@ -89,30 +96,31 @@
                 <span class="letters">компаний</span><br>
             </div>
         </div>
-        <div id="third-column">
-            <div id="login-menu">
-                <div id="login-menu-wrapping">
-                    <div id="variants-of-entrance">
-                        <span id="enter-with">Войти с помощью</span>
-                        <a href="html/registration.html" id="registration">Регистрация</a>
+        <div class="third-column">
+            <div class="login-menu">
+                <div class="login-menu-wrapping">
+                    <div class="variants-of-entrance">
+                        <span class="enter-with">Войти с помощью</span>
+                        <a href="html/registration.html" class="registration">Регистрация</a>
                     </div>
                     <div class="social-networks">
-                        <a href="html/mail-ru-login.html" id="mail-ru"><span></span></a>
-                        <a href="html/odnokl-login.html" id="odnokl"></a>
+                        <a href="html/mail-ru-login.html" class="mail-ru"><span></span></a>
+                        <a href="html/odnokl-login.html" class="odnokl"></a>
                         <a href="html/fb-login.html"><span><i class="fa fa-facebook-official"></i></span></a>
-                        <a href="html/vk-login.html" id="vk"></a>
+                        <a href="html/vk-login.html" class="vk"></a>
                         <a href="html/google-login.html"><span><i class="fa fa-google-plus-square"></i></span></a>
                     </div>
-                    <span id="or-email">или электронной почты</span>
+                    <span class="or-email">или электронной почты</span>
 
-                    <div id="login-fields">
+                    <div class="login-fields">
                         <form action="login.js" method="post" class="login-form">
-                            <input type="text" name="e-mail" placeholder="E-mail" id="e-mail">
-                            <input type="password" name="pwd" placeholder="Пароль" id="pwd">
+                            <input type="text" name="e-mail" placeholder="E-mail" class="e-mail">
+                            <input type="password" name="pwd" placeholder="Пароль" class="pwd">
 
-                            <label><input type="checkbox" name="remember-me" id="remember-me">Запомнить меня</label><br>
-                            <input type="button" name="enter" value="Войти" id="enter-button">
-                            <a href="html/remember-the-password" id="pwd-remember">Напомнить пароль</a>
+                            <label><input type="checkbox" name="remember-me" class="remember-me">Запомнить
+                                меня</label><br>
+                            <input type="button" name="enter" value="Войти" class="enter-button">
+                            <a href="html/remember-the-password" class="pwd-remember">Напомнить пароль</a>
                         </form>
                     </div>
                 </div>
@@ -122,10 +130,10 @@
 </div>
 
 <div class="column-wrapper">
-    <div id="vacancies-wrapper">
-        <span class="header">Вакансии дня в Украине</span>
+    <div class="vacancies-wrapper">
+        <span class=h2>Вакансии дня в Украине</span>
 
-        <div id="vacancies-wo-header">
+        <div class="vacancies-wo-header">
             <div class="vacancy-wrapper">
                 <a class="vacancy-link" href="html/vacancy-link.html">
                     <span class="vacancy">Менеджер по продаже и аренде недвижимости / Риелтор ( м. Крещатик / Борщаговка / Левобережная)</span>
@@ -391,7 +399,7 @@
     <div class="top-wrapper">
         <div class="top-right-wrapper">
             <div class="news-block-wrapper">
-                <span class="header"><a href="html/news.html" class="header-link">Новости</a></span>
+                <span class=h2><a href="html/news.html" class="header-link">Новости</a></span>
                 <ul class="news-list">
                     <li class="news-item">
                         <a href="html/news.html" class="link-in-list">
@@ -424,7 +432,7 @@
 
             </div>
             <div class="articles-block-wrapper">
-                <span class="header"><a href="html/news.html" class="header-link">Новости</a></span>
+                <span class=h2><a href="html/news.html" class="header-link">Новости</a></span>
                 <ul class="news-list">
                     <li class="news-item">
                         <a href="html/news.html" class="link-in-list">
@@ -455,9 +463,9 @@
                     </li>
                 </ul>
             </div>
-            <div id="stay-in-touch">
+            <div class="stay-in-touch">
                 <div class="stay-header">
-                    <span class="header">Оставайтесь на связи</span>
+                    <span class=h2>Оставайтесь на связи</span>
                 </div>
                 <div class="images-wrapper">
                     <a href="html/store.html" class="goo-apple"></a>
@@ -469,15 +477,15 @@
         </div>
     </div>
     <div class="left-wrapper">
-        <div id="job-in-companies">
-            <div id="header2">
-                <span class="header">Работа в компаниях Украины</span>
+        <div class="job-in-companies">
+            <div class="header2">
+                <span class=h2>Работа в компаниях Украины</span>
             </div>
-            <div id="logo-wrapper">
+            <div class="logo-wrapper">
                 <img src="img/good-logo.jpg" width="250px" height="160px">
             </div>
-            <div id="job-in-companies-columns">
-                <ul id="job-in-companies-list">
+            <div class="job-in-companies-columns">
+                <ul class="job-in-companies-list">
                     <li>
                                 <span class="company-name">
                                     <a href="html/company.html">МЕТИНВЕСТ</a>
@@ -565,7 +573,7 @@
             </div>
         </div>
         <div class="banners-wrapper">
-            <div id="banners">
+            <div class="banners">
                 <div class="mini-banner">
                     <img src="img/banner-refresh-resume.jpg">
                 </div>
@@ -583,7 +591,7 @@
             </div>
         </div>
         <div class="job-by-professions-wrapper">
-            <span class="header">Работа по профессиям в Украине</span>
+            <span class=h2>Работа по профессиям в Украине</span>
 
             <div class="job-by-professions-list">
                 <ul class="list-of-the-links">
@@ -709,7 +717,7 @@
     </div>
     <div class="left-wrapper">
         <div class="column job-in-ukraine">
-            <span class="header">Работа в Украине</span>
+            <span class=h2>Работа в Украине</span>
 
             <p class="article">Исследования рынка труда показывают, что отсутствие возможности карьерного роста и
                 профессионального развития — не менее важные причины для поиска нового места, чем материальные
@@ -718,7 +726,7 @@
             <a href="html/research.html">Показать полностью</a>
         </div>
         <div class="column other-cities">
-            <span class="header">Работа в Украине</span>
+            <span class=h2>Работа в Украине</span>
             <ul class="list-of-the-links">
 
                 <li class="list-element">
@@ -764,7 +772,7 @@
 
         </div>
         <div class="column useful">
-            <span class="header">Полезное</span>
+            <span class=h2>Полезное</span>
             <ul class="list-of-the-links">
 
                 <li class="list-element">
@@ -815,10 +823,13 @@
 <div class="footer column-wrapper">
     <a href="html" class="footer-black">Работодателям</a>
     <a href="html" class="footer-grey">Прайс-лист</a>
+
     <div class="footer-social">
         <a href="html/social.html" class="footer-social-link"><i class="fa fa-facebook"></i></a>
         <a href="html/social.html" class="footer-social-link"><i class="fa fa-twitter"></i></a>
-    </div><br>
+        <a href="html/social.html" class="footer-social-link"><i class="icon-Vkontakte"></i></a>
+    </div>
+    <br>
     <a href="html" class="footer-black">Соискателям</a>
     <a href="html" class="footer-grey">Продвижение резюме</a>
     <a href="html" class="footer-grey">Работа в других городах</a>
@@ -831,6 +842,7 @@
     <a href="html" class="footer-grey">Сегодня на сайте 18 167 вакансий, 805 589 резюме, 33 748 компаний</a>
 </div>
 
+<div class="vk"></div>
 </main>
 </body>
 
