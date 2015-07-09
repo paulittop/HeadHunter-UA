@@ -17,7 +17,7 @@ body {
     display: block;
     width: 1320px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 20px;
     position: relative;
     min-width: 1000px;
     white-space: nowrap;
@@ -28,9 +28,8 @@ body {
 .header {
     height: 50px;
     line-height: 50px;
-    font-family: ProximaNovaCond,Arial,sans-serif;
-    margin-top: 30px;
-    margin-left: 66px;
+    font-family: ProximaNovaCond, Arial, sans-serif;
+    margin: 30px 0 15px 46px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -38,13 +37,15 @@ body {
 
 .logo {
     display: inline-block;
-    width: 88px;
+    width: 88px;¡\
     height: 51px;
     background: url(../img/hh.ua.svg) no-repeat;
     background-size: 88px 51px;
+    padding: 0;
+    margin: 0;
 }
 
-.search-wrapper{
+.search-wrapper {
     display: inline-block;
     margin-left: 32px;
     margin-top: 0px;
@@ -70,11 +71,11 @@ body {
 
 input[type=text], select:focus {
     outline: 0;
-    padding-left:11px;
-    padding-top:0px;
+    padding-left: 11px;
+    padding-top: 0px;
 }
 
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder {
     word-spacing: normal;
 }
 
@@ -88,25 +89,27 @@ select.search-filter {
     padding-top: 2px;
     margin-left: -6px;
     padding-left: 14px;
-    background:white url("../img/arrow_down.png") no-repeat 92% 49%;
+    background: white url("../img/arrow_down.png") no-repeat 92% 49%;
     -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
     overflow: hidden;
-    font-family: ProximaNovaCond,Arial,sans-serif;
+    font-family: ProximaNovaCond, Arial, sans-serif;
     font-size: 12px;
     text-indent: 0px;
     letter-spacing: normal;
 }
-option{
+
+option {
 
 }
 
-.search-buttons{
+.search-buttons {
     display: inline-block;
     vertical-align: top;
-    margin-left:1px;
+    margin-left: 1px;
 }
+
 .search-button {
     display: inline-block;
     color: white;
@@ -114,7 +117,7 @@ option{
     height: 35px;
     width: 100px;
     border-radius: 3px;
-    font-family: ProximaNovaCond,Arial,sans-serif;
+    font-family: ProximaNovaCond, Arial, sans-serif;
     line-height: 35px;
     text-decoration: none;
     text-align: center;
@@ -130,17 +133,17 @@ option{
 
 .wide-search-button {
     display: inline-block;
-    line-height:13px;
+    line-height: 13px;
     font-size: 11px;
-    font-weight:lighter;
-    padding-left:6px;
+    font-weight: lighter;
+    padding-left: 6px;
     vertical-align: middle;
     color: #0099FF;
     text-decoration: none;
     transform: translateZ(0);
 }
 
-.country-language{
+.country-language {
     display: inline-block;
     margin: -1px 0 0 101px;
     vertical-align: top;
@@ -152,34 +155,87 @@ option{
     color: #989898;
     line-height: 13px;
     font-size: 11px;
-    font-weight:lighter;
+    font-weight: lighter;
     text-decoration: none;
 
 }
 
 .language {
-  margin-left: 24px;
+    margin-left: 24px;
 }
 
-
 .main-menu {
+    display: block;
     width: 100%;
-    background-color: black;
+    min-width: 1000px;;
+    background-color: #2c2c2c;
     color: white;
     border-bottom: 1px solid #FFFFFF;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 22px;
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.4px;
 
+}
+
+li.ellipse {
+    display: inline-block;
+    width: 16px;
+    height: 29px;
+    background: #2c2c2c url("../img/logo-ellipse.png") no-repeat;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
 }
 
 .main-menu ul {
-    line-height: 30px;
-    vertical-align: bottom;
+    display: inline-block;
+    margin: 0px 0 0 0px;
+    vertical-align: top;
 }
 
 .main-menu li {
-    display: inline;
-    margin-right: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-menu li:nth-child(2),.main-menu li:nth-child(3){
+    margin-right: 27px;
+}
+.main-menu li:nth-child(3){
+    margin-right: 29px;
+}
+.main-menu li:nth-child(4),.main-menu li:nth-child(5){
+    margin-right: 28px;
+}
+.main-menu li:nth-child(6){
+    margin-right: 28px;
+}
+
+input.menu-input-field{
+    display: inline-block;
+    width:125px;
+    height: 23px;
+
 
 }
+input.menu-input-field::-webkit-input-placeholder{
+    line-height: normal;
+    font-size:14px;
+    text-indent:15px;
+    vertical-align: top;
+
+}
+input.menu-input-field::-webkit-input-placeholder::after{
+    font-family: fontAwesome;
+    content:'\f002  ';
+    color: grey;
+    padding-left: 30px;
+}
+
 
 .main-menu > ul :last-child {
 }
@@ -415,8 +471,6 @@ i.fa-google-plus-square {
     margin-left: 25px;
 }
 
-
-
 .vacancies-wrapper {
     display: inline-block;
     width: 960px;
@@ -518,7 +572,6 @@ span.vacancy, span.salary {
     -webkit-column-fill: auto;
     -moz-columns: 280px 3;
     -moz-column-gap: 45px;
-
 }
 
 .job-in-companies-list {
